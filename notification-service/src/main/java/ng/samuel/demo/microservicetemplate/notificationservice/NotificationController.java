@@ -33,20 +33,4 @@ public class NotificationController {
                 .onErrorResume(e -> Mono.just("Failed to send notification: " + e.getMessage()));
     }
 
-//        private final RestTemplate restTemplate;
-//
-//    @Autowired
-//    public NotificationController(RestTemplate restTemplate) {
-//        this.restTemplate = restTemplate;
-//    }
-//
-//    @GetMapping("/send/{userId}")
-//    public String sendNotification(@PathVariable String userId) {
-//        // Make a REST call to fetch user details
-//        String url = "http://USER-SERVICE/users/" + userId;
-//        Map<String, String> user = restTemplate.getForObject(url, Map.class);
-//
-//        // Return the notification message
-//        return "Notification sent to " + user.get("name") + " (" + user.get("email") + ")";
-//    }
 }

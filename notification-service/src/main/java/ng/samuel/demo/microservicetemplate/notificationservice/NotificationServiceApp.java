@@ -19,12 +19,6 @@ public class NotificationServiceApp
         SpringApplication.run(NotificationServiceApp.class, args);
     }
 
-//    @Bean
-//    @LoadBalanced
-//    public RestTemplate restTemplate() {
-//        return new RestTemplate();
-//    }
-
     @Bean
     @LoadBalanced
     public WebClient.Builder webClientBuilder() {
